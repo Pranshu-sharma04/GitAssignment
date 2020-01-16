@@ -1,0 +1,13 @@
+suppose  we have two commits in local branch
+D---E master
+     /
+A---B---C---F origin/master
+
+After git pull it will be:
+D--------E
+     /          \
+A---B---C---F----G   master, origin/master
+
+and after git pull --rebase it wil be:
+
+A---B---C---F---D'---E'   master, origin/master
