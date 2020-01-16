@@ -1,0 +1,4 @@
+git pull is eqaul to git fetch + git merge whereas git merge is always
+implemented when after git fetch.
+Lets take an example:
+suppose origin/master is at C. Someone pushed D. I worked on E & F. I will not see D in my local repository until i run git fetch and after that i will run git merge but instead of this we can run git pull to do this in one step.
